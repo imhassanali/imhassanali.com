@@ -1,0 +1,351 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-size: 28px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+    background-color: #f9f9f9;
+    padding-bottom: 7.05rem;
+}
+
+h1, h2, h3, h4, h5, h5 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+}
+
+.nav-header {
+    position: absolute;
+}
+
+.main-header {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.main-header .va {
+    width: 100%;
+    text-align: center;
+}
+
+.main-header .title {
+    font-size: 3.63rem;
+    text-transform: uppercase;
+    color: #575757;
+    max-width: 23rem;
+    margin-bottom: 1.1428rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-header p {
+    font-size: 1.1428rem;
+    color: #989898;
+}
+
+.main-header .shape {
+    position: absolute;
+}
+
+.main-header .shape > img {
+    max-width: 100%;
+}
+
+.main-header .shape-one {
+    left: 0;
+    top: 60%;
+    transform: translateY(-60%);
+}
+
+.main-header .shape-two {
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -15%);
+}
+
+.main-header .shape-three {
+    right: 0;
+    top: 35%;
+    transform: translateY(-35%);
+}
+
+.main-header .shape-four {
+    left: 40%;
+    top: 85%;
+    transform: translate(-85%, -40%);
+}
+
+.main-header .shape-five {
+    right: 5%;
+    top: 80%;
+    transform: translate(-80%, -5%);
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 44px 42px;
+    box-shadow: 0px 0px 38px 0px rgba(155, 92, 212, 0.3);
+}
+
+.menu-btn div {
+    height: 3px;
+    width: 26px;
+    background-color: #81209d;
+}
+
+.menu-btn div:not(:last-of-type) {
+    margin-bottom: 6px;
+}
+
+.menu-btn div:nth-of-type(2) {
+    transform: scaleX(0.6);
+    transform-origin: left;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo > a {
+    display: block;
+    padding: 0.643rem;
+}
+
+.logo svg {
+    margin-left: 1rem;
+    max-width: 100%;
+    fill: #575757;
+}
+
+.va {
+    display: table;
+    height: 100%;
+}
+
+.copy {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-section {
+    position: relative;
+}
+
+.intro-section .container {
+    padding-top: 7.05rem;
+    padding-bottom: 7.05rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.intro-section .shape-one {
+    left: 0;
+    top: 60%;
+    transform: translateY(-60%);
+}
+
+.intro-section .shape-two {
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -15%);
+}
+
+.intro-section .shape-three {
+    left: 6%;
+    top: 60%;
+    transform: translate(-6%, -60%);
+}
+
+.intro-section .shape-four {
+    right: 14%;
+    top: 73%;
+    transform: translate(-14%, -73%);
+    z-index: 10;
+}
+
+.intro-section .shape-five {
+    left: 36%;
+    top: 85%;
+    transform: translate(-36%, -85%);
+    z-index: 10;
+}
+
+.card {
+    position: relative;
+    padding: 8.5% 7.5%;
+    background-color: #fff;
+    box-shadow: -47.255px 31.874px 172px 0px rgba(0, 0, 0, 0.11);
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5714rem;
+    color: #989898;
+    width: 50%;
+    padding-right: 4rem;
+    margin-bottom: 4rem;
+}
+
+.card > img {
+    position: absolute;
+    box-shadow: 0px 0px 3.893rem 0px rgba(0, 0, 0, 0.4);
+    right: 3.75rem;
+    bottom: 4rem;
+    max-width: 39.2%;
+    outline: 2px solid;
+    outline-color: transparent;
+    outline-offset: -15px;
+    transition: ease 0.4s all;
+}
+
+.card > img:hover {
+    outline-color: #575757;
+    outline-offset: 10px;
+    transition: ease-in 0.4s all;
+}
+
+.shape {
+    position: absolute;
+    max-width: 12.5%;
+    z-index: -1;
+}
+
+.shape > img {
+    max-width: 100%;
+}
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1170px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-section .container {
+        padding-top: 14.05rem;
+    }
+
+    .card p {
+        margin-bottom: 2.5rem;
+        font-size: 0.9rem;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .card > img {
+        width: 230px;
+        bottom: initial;
+        top: -14rem;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        max-width: initial;
+    }
+}
+
+@media (max-width: 640px) {
+    html {
+        font-size: 16px;
+    }
+
+    .intro-section .container {
+        padding-top: 17.2rem;
+    }
+
+    .card > img {
+        top: -35rem;
+        transform: translateY(100%);
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header .title {
+        font-size: 2.75rem;
+    }
+
+    .card > img {
+        top: -35.5rem;
+    }
+}

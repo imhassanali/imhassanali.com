@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hassan Ali - UX / UI Designer</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:300" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header class="nav-header">
+		<button class="menu-btn">
+			<div></div>
+			<div></div>
+			<div></div>
+		</button>
+		<h1 class="logo">
+			<a href="/" title="Hassan Ali">
+				<svg xmlns="http://www.w3.org/2000/svg" width="57" height="75" viewbox="0 0 100 100">
+					<title>Hassan Ali</title>
+					<path d="M19 84.4H6v-7.8h11.9v-6h-4.3v-3.1H7.7v3.1H0v19.9h18.3c.3-2 .5-4.1.7-6.1M73.9 40.7h4.7v-6H67.9v10.4h6z"/>
+					<path d="M29 38.9h5.3v28.4h44.3v-6h-4.8v-3.9h-6v3.9H50.1V0h-6v61.2h-3.7V32.9H23v44c0 2.3 0 5-.1 7.8-.1 1.6-.1 3.2-.3 4.8-.2 2-.4 4.1-.7 6-.4 2.2-.9 4.2-1.5 6.1-.9 2.5-2 4.6-3.6 6.2-1.8 1.8-4.1 2.7-6.9 2.7v6c4.4 0 8.2-1.5 11.1-4.5 2.7-2.7 4.4-6.3 5.6-10.3.6-2 1-4.1 1.4-6.2.3-2 .5-4 .7-6 .1-1.6.2-3.2.2-4.8.1-2.7.1-5.4.1-7.8v-2.2-25.9-9.9"/>
+					<path d="M76.6 48.2h-23v10h6v-4h23.2v15.9H44.3v6h-3.4v-5h-6v13.2h-2.7c-.1 1.8-.3 3.9-.6 6h9.3v-8.2h9.4v-6h38.6v-28H76.6z"/>
+				</svg>
+			</a>
+		</h1>
+	</header>
 
+	<div class="main-header">
+		<div class="shape shape-one">
+			<img src="images/header_shape1.png" alt="">
+		</div>
+		<div class="shape shape-two">
+			<img src="images/header_shape2.png" alt="">
+		</div>
+		<div class="shape shape-three">
+			<img src="images/header_shape3.png" alt="">
+		</div>
+		<div class="shape shape-four">
+			<img src="images/header_shape4.png" alt="">
+		</div>
+		<div class="shape shape-five">
+			<img src="images/header_shape5.png" alt="">
+		</div>
+		<div class="va">
+			<div class="copy">
+				<h1 class="title">Hassan Ali Siddiqui</h1>
+				<p>UI / UX Designer</p>
+			</div>
+		</div>
+	</div>
+
+	<section class="intro-section">
+		<div class="shape shape-four">
+			<img src="images/header_shape4.png" alt="">
+		</div>
+		<div class="shape shape-three">
+			<img src="images/header_shape3.png" alt="">
+		</div>
+		<div class="shape shape-five">
+			<img src="images/header_shape5.png" alt="">
+		</div>
+		<div class="container">
+			<div class="card">
+				<p>
+					Hi, This is Hassan Ali from Karachi, Pakistan.A Creative Bug  Graphics Designer & UI / UX Designer with 7 Years of Experience in Design Sphere. I have worked with many Global Brands. My Goal is to provide high Quality Service
+				</p>
+				<img src="images/hassan-ali.png" alt="">
+			</div>
+		</div>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		var $layer_0 = $('.shape-one'),
+    $layer_1 = $('.shape-two'),
+    $layer_2 = $('.shape-three'),
+		$layer_3 = $('.shape-four'),
+		$layer_4 = $('.shape-five'),
+    $container = $('body'),
+    container_w = $container.width(),
+    container_h = $container.height();
+
+$(window).on('mousemove.parallax', function(event) {
+  var pos_x = event.pageX,
+      pos_y = event.pageY,
+      left  = 0,
+      top   = 0;
+
+  left = container_w / 2 - pos_x;
+  top  = container_h / 2 - pos_y;
+  
+ 
+  TweenMax.to(
+    $layer_2, 
+    10, 
+    { 
+      css: { 
+        transform: 'translateX(' + left / 16 + 'px) translateY(' + top / 8 + 'px)' 
+      }, 
+      ease:Expo.easeOut, 
+      overwrite: 'all' 
+    });
+  
+  TweenMax.to(
+    $layer_1, 
+    10, 
+    { 
+      css: { 
+        transform: 'translateX(' + left / 16 + 'px) translateY(' + top / 8 + 'px)' 
+      }, 
+      ease:Expo.easeOut, 
+      overwrite: 'all' 
+    });
+  
+  TweenMax.to(
+    $layer_0,
+    10,
+    {
+      css: {
+        transform: 'translateX(' + left / 16 + 'px) translateY(' + top / 8 + 'px)' 
+      },
+      ease: Expo.easeOut,
+      overwrite: 'none'
+    });
+
+		TweenMax.to(
+    $layer_3,
+    10,
+    {
+      css: {
+        transform: 'translateX(' + left / 16 + 'px) translateY(' + top / 8 + 'px)' 
+      },
+      ease: Expo.easeOut,
+      overwrite: 'none'
+    });
+
+		TweenMax.to(
+    $layer_4,
+    10,
+    {
+      css: {
+        transform: 'translateX(' + left / 16 + 'px) translateY(' + top / 8 + 'px)' 
+      },
+      ease: Expo.easeOut,
+      overwrite: 'none'
+    });
+});
+	</script>
+</body>
+</html>
